@@ -39,8 +39,8 @@ public class TestGenericsV3 {
 		ArrayList<Dog> dogs = new ArrayList<Dog>();
 		dogs.add(new Dog());
 		dogs.add(new Dog());
-		
-		takeAnimals(dogs);
+//		todo
+		//takeAnimals(dogs);
 	}
 	private void takeAnimals(ArrayList<Animal> animals) {
 		// TODO Auto-generated method stub

@@ -40,7 +40,8 @@ public class Duck {
 		/*The below line gives a error: Cannot make a static reference to the non-static 
 		 * field size.
 		 */
-		System.out.println("Size of the duck is " +size);
+		//todo
+//		System.out.println("Size of the duck is " +size);
 	}
 
 }

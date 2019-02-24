@@ -39,7 +39,8 @@ public class Duck2 {
 		/*The below line gives an error:
 		 * Cannot make a static reference to the non-static method getSize() from the type Duck2
 		 */
-		System.out.println("Size of the duck is " +getSize());
+//		todo
+//		System.out.println("Size of the duck is " +getSize());
 
 	}
 

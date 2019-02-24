@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>/home/ubuntu/myGithubTutorials/javaEclipse/HeadFirstJava/src/head/first/java/chapter14/.Readme.md.html</title>
+<title>/home/ubuntu/myGithubTutorials/javaEclipse/HeadFirstJava/src/head/first/java/chapter14/.ReadMe.md.html</title>
 
 
 <style type="text/css">
@@ -449,37 +449,6 @@ function setDocumentScrollTop(ypos)
 
 </head>
 <body class="markdown-body">
-<h1> <a name="head-first-java-chapter-14" class="anchor" href="..md.html#head-first-java-chapter-14"><span class="octicon octicon-link"></span></a>Head First Java Chapter 14</h1> 
-<p>This is the fourteenth Chapter learning of <strong>Head First Java</strong> by <strong>Kathy Sierra</strong> and <strong>Bert Bates</strong>, This markdown file is my notes for the fourteenth chapter, not sure if any copyright issues are there.</p> 
-<h2> <a name="serialization--file-io" class="anchor" href="..md.html#serialization--file-io"><span class="octicon octicon-link"></span></a>Serialization &amp; File I/O</h2> 
-<h3> <a name="bullet-points-serialization-" class="anchor" href="..md.html#bullet-points-serialization-"><span class="octicon octicon-link"></span></a>Bullet Points (Serialization):-</h3> 
-<ul> 
- <li>You can save an Object's state by serializing the Object.</li> 
- <li>To serialize an object, you need an ObjectOutputStream.</li> 
- <li>Streams are either connection streams or chain streams.</li> 
- <li>Connections streams can represent a connection to a source or destination, typically file, network socket connection, or the console.</li> 
- <li>Chain streams cannot connect to a source or destination and must be chained to a connection stream.</li> 
- <li>To serialize an object, call <em>writeObject(theObject)</em> on the ObjectOutputStream. You do not need to call methods on the FileOutputStream.</li> 
- <li>To be serialized, an object must implement the Serializable interface. If a superclass of the class implements Serializable, the subclass will automatically be serializable even if it does not specifically declare implements serializable.</li> 
- <li>When an object is serialized, its entire object graph is serialized. That means any objects referenced by the serialized objects instance variable are serialized, and any object referenced by those object .. and so on.</li> 
- <li>If any object in the graph is not serializable, an exception will be thrown at runtime, unless the instance variable referring to the object is skipped.</li> 
- <li>Mark an instance variable with the <em>transient</em> keyword if you want serialization to skip that variable. The variable will be restored as null or default values.</li> 
- <li>During deserialization, the class of all objects in the graph must be available to the JVM.</li> 
- <li>You read object in (using readObject()) in the order in which they were originally written.</li> 
- <li>The return type of readObject() is type Object, so deserialized objects must be cast to their real type.</li> 
- <li>Static variables are not serialized! it doesn't make sense to save a static variable value as part of a specific object's state, since all objects of that type share only a single value - the one in the class.</li> 
-</ul>
-<h3> <a name="bullet-points-file-io-" class="anchor" href="..md.html#bullet-points-file-io-"><span class="octicon octicon-link"></span></a>Bullet Points (File IO):-</h3> 
-<ul> 
- <li>To write a text file, start with a FileWriter connection stream.</li> 
- <li>Chain the FileWriter to a BufferedWriter for efficiency.</li> 
- <li>A File object represent a file at a particular path, but does not represent the actual content of the file.</li> 
- <li>With a File Object you can create, traverse, and delete directories.</li> 
- <li>Most Streams that can use a String filename can use a File Object as well, and a File Object can be safer to use.</li> 
- <li>To read a text file, start with a FileReader connection stream.</li> 
- <li>Chain the FileReader to a BufferedReader for efficiency.</li> 
- <li>To parse a text file, you need to be sure the file is written with some way to recognize the different elements. A common approach is to use some kind of character to separate the individual pieces.</li> 
- <li>Use the String Split() method to split a String up into individual tokens. A String with one separator will have two tokens, one on each side of the separator. The <em>separator</em> doesn't count as a token.</li> 
-</ul>
+
 </body>
 </html>

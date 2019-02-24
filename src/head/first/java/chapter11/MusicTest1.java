@@ -20,7 +20,8 @@ public class MusicTest1 {
 		/*This below line has a error:-
 		 * Unhandled exception type MidiUnavailableException
 		 */
-		Sequencer sequencer = MidiSystem.getSequencer();
+//		todo
+//		Sequencer sequencer = MidiSystem.getSequencer();
 		System.out.println("We got Sequencer.");
 	}
 	/**
